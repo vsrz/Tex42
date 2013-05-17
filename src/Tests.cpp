@@ -12,7 +12,9 @@ void Tests::beginTest( void )
 void Tests::endTest( void )
 {
     std::cout << "** End Test **" << std::endl;
-    std::cout << "Press enter to continue...";
+#ifndef GRAPHIC_TESTS
+	std::cout << "Press enter to continue...";
     std::cin.get();
-    std::cout << std::endl;
+	std::cout << std::endl;
+#endif
 }

@@ -6,12 +6,15 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Graphic Tests|Win32 = Graphic Tests|Win32
 		Release|Win32 = Release|Win32
 		Run Tests|Win32 = Run Tests|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68D83390-80E6-4E64-808F-E3B6FF715788}.Debug|Win32.ActiveCfg = Debug|Win32
-		{68D83390-80E6-4E64-808F-E3B6FF715788}.Debug|Win32.Build.0 = Debug|Win32
+		{68D83390-80E6-4E64-808F-E3B6FF715788}.Debug|Win32.ActiveCfg = Graphic Tests|Win32
+		{68D83390-80E6-4E64-808F-E3B6FF715788}.Debug|Win32.Build.0 = Graphic Tests|Win32
+		{68D83390-80E6-4E64-808F-E3B6FF715788}.Graphic Tests|Win32.ActiveCfg = Graphic Tests|Win32
+		{68D83390-80E6-4E64-808F-E3B6FF715788}.Graphic Tests|Win32.Build.0 = Graphic Tests|Win32
 		{68D83390-80E6-4E64-808F-E3B6FF715788}.Release|Win32.ActiveCfg = Release|Win32
 		{68D83390-80E6-4E64-808F-E3B6FF715788}.Release|Win32.Build.0 = Release|Win32
 		{68D83390-80E6-4E64-808F-E3B6FF715788}.Run Tests|Win32.ActiveCfg = Run Tests|Win32

@@ -5,6 +5,12 @@
 #include "DominoCollection.h"
 #include "PlayerAI.h"
 
+#ifdef GRAPHIC_TESTS
+
+#include "SFMLBasicTests.h"
+#include "GameWindowTests.h"
+#endif
+
 #ifdef RUN_TESTS
 
 #include "Tests.h"
@@ -22,7 +28,7 @@
 int main( int argc, char** argv)
 {
 
-#ifdef RUN_TESTS
+#if RUN_TESTS
 
 	DominoTests dt;
 	DominoCollectionTests dct;
@@ -40,6 +46,14 @@ int main( int argc, char** argv)
     tt.RunAllTests();
     tst.RunAllTests();
 
+#elif GRAPHIC_TESTS
+	SFMLBasicTests sbt;
+	GameWindowTests gwt;
+	sbt.RunAllTests();
+	gwt.RunAllTests();
+
+	//std::cout << "End of all tests. Press Enter to exit...";
+	//std::cin.get();
 #else
 
 

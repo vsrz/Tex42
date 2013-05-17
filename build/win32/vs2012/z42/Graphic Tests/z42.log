@@ -1,0 +1,120 @@
+﻿Build started 5/16/2013 11:35:00 AM.
+Project "C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\z42.vcxproj" on node 2 (Build target(s)).
+PreBuildEvent:
+  copy "C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\*.*" "C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\"
+  mkdir /Y res
+  xcopy /E /Y /I "C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\res" "C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\res"
+  :VCEnd
+  The syntax of the command is incorrect.
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-audio-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-audio-s-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-audio-s.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-audio.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-graphics-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-graphics-s-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-graphics-s.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-graphics.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-main-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-main.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-network-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-network-s-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-network-s.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-network.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-system-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-system-s-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-system-s.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-system.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-window-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-window-s-d.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-window-s.lib
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib\sfml-window.lib
+         22 file(s) copied.
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\res\fonts\karla.ttf
+  C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\res\img\domino_4-0.png
+  2 File(s) copied
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\include" /ZI /nologo /W3 /WX- /Od /Oy- /D GRAPHIC_TESTS /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Graphic Tests\\" /Fd"Graphic Tests\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\src\SFMLBasicTests.cpp ..\..\..\..\src\TextRenderer.cpp
+  TextRenderer.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  SFMLBasicTests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\Tex42.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\..\..\..\..\src\SFML-2.0\lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\Tex42.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\Tex42.lib" /MACHINE:X86 "Graphic Tests\Bid.obj"
+  "Graphic Tests\Domino.obj"
+  "Graphic Tests\DominoCollection.obj"
+  "Graphic Tests\DominoCollectionTests.obj"
+  "Graphic Tests\DominoSprite.obj"
+  "Graphic Tests\DominoTests.obj"
+  "Graphic Tests\GameWindow.obj"
+  "Graphic Tests\GameWindowTests.obj"
+  "Graphic Tests\main.obj"
+  "Graphic Tests\Player.obj"
+  "Graphic Tests\PlayerAI.obj"
+  "Graphic Tests\PlayerCollection.obj"
+  "Graphic Tests\PlayerCollectionTests.obj"
+  "Graphic Tests\PlayerTests.obj"
+  "Graphic Tests\RandomNumberGenerator.obj"
+  "Graphic Tests\RandomNumberGeneratorTests.obj"
+  "Graphic Tests\SFMLBasicTests.obj"
+  "Graphic Tests\SFMLDominoTests.obj"
+  "Graphic Tests\TextRenderer.obj"
+  "Graphic Tests\Tile.obj"
+  "Graphic Tests\Team.obj"
+  "Graphic Tests\Tests.obj"
+  "Graphic Tests\Texas42Game.obj"
+  "Graphic Tests\Texas42GameTests.obj"
+  "Graphic Tests\Texas42Set.obj"
+  "Graphic Tests\Texas42SetTests.obj"
+  "Graphic Tests\Trick.obj"
+  "Graphic Tests\TrickTests.obj"
+sfml-graphics-s-d.lib(Color.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Color.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Font.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Font.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(GLCheck.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(GLCheck.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Image.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Image.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(ImageLoader.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(ImageLoader.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(RenderStates.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RenderStates.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(RenderTarget.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RenderTarget.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(RenderWindow.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RenderWindow.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Shader.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Shader.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Texture.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Texture.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(TextureSaver.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(TextureSaver.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Transform.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Transform.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Transformable.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Transformable.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(View.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(View.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Vertex.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Vertex.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Shape.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Shape.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(CircleShape.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(CircleShape.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(RectangleShape.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RectangleShape.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Sprite.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Sprite.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Text.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Text.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(VertexArray.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(VertexArray.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-graphics-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(GlContext.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(GlContext.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(GlResource.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(GlResource.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(JoystickManager.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(JoystickManager.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(Mouse.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(Mouse.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(VideoMode.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(VideoMode.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(Window.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(WindowImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(WindowImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(WglContext.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(WglContext.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(InputImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(InputImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(JoystickImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(JoystickImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(VideoModeImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(VideoModeImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(WindowImplWin32.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-window-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(Clock.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Clock.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(Err.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Err.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(Lock.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Lock.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(Mutex.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Mutex.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(Sleep.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Sleep.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(String.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(String.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(ThreadLocal.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(ThreadLocal.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(Time.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Time.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(ClockImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(ClockImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(MutexImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(MutexImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(SleepImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(SleepImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj)' or at 'C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\sfml-system-s-d.pdb'; linking object as if no debug info
+  z42.vcxproj -> C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\Graphic Tests\Tex42.exe
+Done Building Project "C:\Users\vsrz\Documents\GitHub\Tex42\build\win32\vs2012\z42\z42.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.04

@@ -5,6 +5,10 @@
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Graphic Tests|Win32">
+      <Configuration>Graphic Tests</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
@@ -33,6 +37,12 @@
     <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Graphic Tests|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -49,6 +59,9 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Run Tests|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Graphic Tests|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -57,6 +70,9 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Run Tests|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Graphic Tests|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -75,7 +91,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\src\SFML-2.0\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Run Tests|Win32'">
@@ -93,6 +109,27 @@
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\src\SFML-2.0\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Graphic Tests|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GRAPHIC_TESTS;SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\..\src\SFML-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\src\SFML-2.0\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)..\..\..\..\src\SFML-2.0\lib\*.*" "$(OutDir)"
+mkdir /Y res
+xcopy /E /Y /I "$(SolutionDir)..\..\..\..\res" "$(OutDir)res"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -119,7 +156,10 @@
     <ClCompile Include="..\..\..\..\src\Domino.cpp" />
     <ClCompile Include="..\..\..\..\src\DominoCollection.cpp" />
     <ClCompile Include="..\..\..\..\src\DominoCollectionTests.cpp" />
+    <ClCompile Include="..\..\..\..\src\DominoSprite.cpp" />
     <ClCompile Include="..\..\..\..\src\DominoTests.cpp" />
+    <ClCompile Include="..\..\..\..\src\GameWindow.cpp" />
+    <ClCompile Include="..\..\..\..\src\GameWindowTests.cpp" />
     <ClCompile Include="..\..\..\..\src\main.cpp" />
     <ClCompile Include="..\..\..\..\src\Player.cpp" />
     <ClCompile Include="..\..\..\..\src\PlayerAI.cpp" />
@@ -128,6 +168,10 @@
     <ClCompile Include="..\..\..\..\src\PlayerTests.cpp" />
     <ClCompile Include="..\..\..\..\src\RandomNumberGenerator.cpp" />
     <ClCompile Include="..\..\..\..\src\RandomNumberGeneratorTests.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFMLBasicTests.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFMLDominoTests.cpp" />
+    <ClCompile Include="..\..\..\..\src\TextRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\src\Tile.cpp" />
     <ClCompile Include="..\..\..\..\src\Team.cpp" />
     <ClCompile Include="..\..\..\..\src\Tests.cpp" />
     <ClCompile Include="..\..\..\..\src\Texas42Game.cpp" />
@@ -142,7 +186,10 @@
     <ClInclude Include="..\..\..\..\src\Domino.h" />
     <ClInclude Include="..\..\..\..\src\DominoCollection.h" />
     <ClInclude Include="..\..\..\..\src\DominoCollectionTests.h" />
+    <ClInclude Include="..\..\..\..\src\DominoSprite.h" />
     <ClInclude Include="..\..\..\..\src\DominoTests.h" />
+    <ClInclude Include="..\..\..\..\src\GameWindow.h" />
+    <ClInclude Include="..\..\..\..\src\GameWindowTests.h" />
     <ClInclude Include="..\..\..\..\src\Player.h" />
     <ClInclude Include="..\..\..\..\src\PlayerAI.h" />
     <ClInclude Include="..\..\..\..\src\PlayerCollection.h" />
@@ -150,6 +197,7 @@
     <ClInclude Include="..\..\..\..\src\PlayerTests.h" />
     <ClInclude Include="..\..\..\..\src\RandomNumberGenerator.h" />
     <ClInclude Include="..\..\..\..\src\RandomNumberGeneratorTests.h" />
+    <ClInclude Include="..\..\..\..\src\Renderer.h" />
     <ClInclude Include="..\..\..\..\src\SFML-2.0\include\SFML\Audio.hpp" />
     <ClInclude Include="..\..\..\..\src\SFML-2.0\include\SFML\Audio\Export.hpp" />
     <ClInclude Include="..\..\..\..\src\SFML-2.0\include\SFML\Audio\Listener.hpp" />
@@ -231,6 +279,10 @@
     <ClInclude Include="..\..\..\..\src\SFML-2.0\include\SFML\Window\Window.hpp" />
     <ClInclude Include="..\..\..\..\src\SFML-2.0\include\SFML\Window\WindowHandle.hpp" />
     <ClInclude Include="..\..\..\..\src\SFML-2.0\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFMLBasicTests.h" />
+    <ClInclude Include="..\..\..\..\src\SFMLDominoTests.h" />
+    <ClInclude Include="..\..\..\..\src\TextRenderer.h" />
+    <ClInclude Include="..\..\..\..\src\Tile.h" />
     <ClInclude Include="..\..\..\..\src\Team.h" />
     <ClInclude Include="..\..\..\..\src\Tests.h" />
     <ClInclude Include="..\..\..\..\src\Texas42Game.h" />
