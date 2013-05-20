@@ -44,6 +44,7 @@ local.properties
 # Build results
 [Dd]ebug/
 [Rr]elease/
+[Gg]raphic\ [Tt]ests/
 *_i.c
 *_p.c
 *.ilk

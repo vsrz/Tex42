@@ -8,16 +8,11 @@
 #pragma once
 class Renderer
 {
-private:
-	sf::Sprite sprite;
-	sf::Vector2f position;
-
 public:
 	Renderer(void);
 	~Renderer(void);
 
-	virtual void draw( sf::Vector2u position, sf::Vector2f scale ) = 0;
-	virtual void animate( sf::Vector2u fromLocation, sf::Vector2u toLocation) = 0;
+	virtual void draw( sf::RenderWindow & window ) = 0;
 
 };
 

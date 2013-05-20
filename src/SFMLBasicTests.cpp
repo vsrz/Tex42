@@ -239,7 +239,7 @@ void SFMLBasicTests::SFMLTestRun( void )
 	GameWindow g;
 	DominoSprite domino;
 	domino.loadTexture("res\\img\\domino_4-0.png");
-	domino.setSize( 100, 200 );
+	domino.setSize( 64, 128 );
 	domino.setOrientationHorizontal( true );
 	domino.setPosition( 200, 400 );
 	text.setText( "Test string." );
@@ -247,6 +247,7 @@ void SFMLBasicTests::SFMLTestRun( void )
 	g.draw( domino.getSprite() );
 	g.draw( text.getText() );
 	g.display();
+	
 	sf::sleep( sf::Time( sf::seconds( 5 ) ) );
 
 	endTest();

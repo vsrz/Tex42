@@ -3,7 +3,7 @@
 
 TextRenderer::TextRenderer(void)
 {
-	font.loadFromFile( "res\\font\\karla.ttf" );
+	font.loadFromFile( "res\\fonts\\karla.ttf" );
 	text.setFont( font );
 	text.setColor( sf::Color::White );
 	text.setPosition( 100, 100 );

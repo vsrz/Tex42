@@ -165,6 +165,7 @@ xcopy /E /Y /I "$(SolutionDir)..\..\..\..\res" "$(OutDir)res"</Command>
     <ClCompile Include="..\..\..\..\src\PlayerAI.cpp" />
     <ClCompile Include="..\..\..\..\src\PlayerCollection.cpp" />
     <ClCompile Include="..\..\..\..\src\PlayerCollectionTests.cpp" />
+    <ClCompile Include="..\..\..\..\src\PlayerRenderer.cpp" />
     <ClCompile Include="..\..\..\..\src\PlayerTests.cpp" />
     <ClCompile Include="..\..\..\..\src\RandomNumberGenerator.cpp" />
     <ClCompile Include="..\..\..\..\src\RandomNumberGeneratorTests.cpp" />
@@ -194,6 +195,7 @@ xcopy /E /Y /I "$(SolutionDir)..\..\..\..\res" "$(OutDir)res"</Command>
     <ClInclude Include="..\..\..\..\src\PlayerAI.h" />
     <ClInclude Include="..\..\..\..\src\PlayerCollection.h" />
     <ClInclude Include="..\..\..\..\src\PlayerCollectionTests.h" />
+    <ClInclude Include="..\..\..\..\src\PlayerRenderer.h" />
     <ClInclude Include="..\..\..\..\src\PlayerTests.h" />
     <ClInclude Include="..\..\..\..\src\RandomNumberGenerator.h" />
     <ClInclude Include="..\..\..\..\src\RandomNumberGeneratorTests.h" />
