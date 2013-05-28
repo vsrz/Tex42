@@ -3,8 +3,11 @@
 #include "RandomNumberGenerator.h"
 #include "Tile.h"
 #include "GameWindow.h"
+#include "PlayerRenderer.h"
 #include "DominoSprite.h"
 #include "TextRenderer.h"
+#include "Player.h"
+#include "PlayerAI.h"
 #include <string>
 #include <sstream>
 #include <SFML/Graphics.hpp>
@@ -29,9 +32,9 @@ SFMLBasicTests::~SFMLBasicTests(void)
 
 void SFMLBasicTests::RunAllTests( void )
 {
-	SFMLBasicTest();
+	//SFMLBasicTest();
 	//SFMLDrawingTest();
-	SFMLTestRun();
+	//SFMLTestRun();
 }
 
 void SFMLBasicTests::SFMLBasicTest( void )
@@ -237,7 +240,11 @@ void SFMLBasicTests::SFMLTestRun( void )
 	beginTest();
 	TextRenderer text;
 	GameWindow g;
+	PlayerAI player;
 	DominoSprite domino;
+	PlayerRenderer player1;
+	player.setName( "Bob" );
+	
 	domino.loadTexture("res\\img\\domino_4-0.png");
 	domino.setSize( 64, 128 );
 	domino.setOrientationHorizontal( true );

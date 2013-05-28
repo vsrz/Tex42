@@ -9,10 +9,9 @@
 class Renderer
 {
 public:
-	Renderer(void);
-	~Renderer(void);
-
-	virtual void draw( sf::RenderWindow & window ) = 0;
+	Renderer(void) {}
+	~Renderer(void) {}
+	virtual void draw( sf::RenderWindow * window ) = 0;
 
 };
 

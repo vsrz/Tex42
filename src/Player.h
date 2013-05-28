@@ -13,7 +13,7 @@
 
 class Player {
 
-private:
+protected:
 	std::string name;
     Player *partner;
     int seat;
@@ -35,7 +35,7 @@ public:
     void setName( std::string n );
 	void printName( std::ostream &o );
 	void printHand( std::ostream &o );
-    
+    std::string getName( void );
     void setSeat( int );
     int getSeat( void );
     void setPartner( Player *partner );

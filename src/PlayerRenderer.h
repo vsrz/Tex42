@@ -4,17 +4,26 @@
 
 #pragma once
 
+#include <SFML/Graphics.hpp>
 #include "Renderer.h"
-#include "DominoCollection.h
-class PlayerRenderer :
-	public Renderer
+#include "TextRenderer.h"
+#include "Player.h"
+class PlayerRenderer : public Renderer
 {
 
 private:
-	
+	TextRenderer name;
+	Player *player;	
 public:
-	PlayerRenderer(void);
-	~PlayerRenderer(void);
+	PlayerRenderer( void );
+	PlayerRenderer( Player *player ) : player( player ) { PlayerRenderer(); }
+
+	~PlayerRenderer( void );
+
+	void setPlayer( Player *player );
+	void draw( sf::RenderWindow * window );
+	void update();
+
 };
 
 #endif

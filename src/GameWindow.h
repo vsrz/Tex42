@@ -11,9 +11,8 @@
 class GameWindow
 {
 
-protected:
-	Tile tiles[50][50];
 public:
+	Tile tiles[50][50];
 	sf::RenderWindow window;
 
 	GameWindow(void);
@@ -23,6 +22,7 @@ public:
 	void draw( sf::Drawable* drawable );
 	void draw( void );
 	void display( void );
+
 
 
 
