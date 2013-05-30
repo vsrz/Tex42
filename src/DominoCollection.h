@@ -25,6 +25,8 @@ public:
 	Domino removeDomino( void );
 	Domino drawDomino( void );
 	Domino getDomino( Domino d );
+	Domino getDomino( int index );
+
 
 	void addDomino( Domino d );
 	void addDominoes( DominoCollection dominoes );

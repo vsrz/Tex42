@@ -1,6 +1,8 @@
 
 
 #include <iostream>
+#include <string>
+#include <sstream>
 #include "Texas42Game.h"
 #include "DominoCollection.h"
 #include "PlayerAI.h"

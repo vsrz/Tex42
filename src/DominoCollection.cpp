@@ -91,6 +91,13 @@ Domino DominoCollection::getDomino( Domino d ) {
 	throw "Not yet implemented";
 }
 
+Domino DominoCollection::getDomino( int index )
+{
+	if( (size_t) index > dominoes.size() ) throw "Domino index out of bounds";
+	return dominoes[index];
+}
+
+
 bool DominoCollection::isEmpty( void )
 {
 	return dominoes.size() == 0;

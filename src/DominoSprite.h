@@ -6,29 +6,26 @@
 
 #include <SFML/Graphics.hpp>
 #include <string>
+#include "Domino.h"
 
-class DominoSprite
+class DominoSprite : public sf::Sprite
 {
 private:
-	sf::Sprite sprite;
 	sf::Texture texture;
 	bool loaded;
 public:
 	DominoSprite(void);
 	~DominoSprite(void);
 	
+	
 	bool isLoaded( void );
 	
-	bool loadTexture( std::string filepath );
-	bool setSize( sf::Uint32 x, sf::Uint32 y );
-	bool setSize( sf::Vector2u size );
-
-	bool setPosition( float x, float y );
-	bool setPosition( sf::Vector2f position );
-
-	bool setOrientationHorizontal( bool horizontal );
-
-	sf::Sprite* getSprite( void );
+	void loadTexture( std::string filepath );
+	void setSize( sf::Uint32 x, sf::Uint32 y );
+	void setSize( sf::Vector2u size );
+	void setDomino( Domino domino );
+	
+	void setOrientationHorizontal( bool horizontal );
 };
 
 #endif

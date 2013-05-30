@@ -4,6 +4,9 @@
 #include "GameWindow.h"
 #include "RandomNumberGenerator.h"
 #include "Tile.h"
+#include "PlayerAI.h"
+#include "DominoCollection.h"
+#include "PlayerRenderer.h"
 
 GameWindowTests::GameWindowTests(void)
 {
@@ -23,33 +26,49 @@ void GameWindowTests::RunAllTests( void )
 
 void GameWindowTests::windowTest( void )
 {
+	PlayerAI player0, player1, player2, player3;	
 	RandomNumberGenerator r;
-	GameWindow window;
-	std::vector< std::vector<Tile> > tiles;
-	std::vector< sf::Drawable* > items;
+	DominoCollection set;
 
-	tiles.resize( 11 );
-	for( int i = 0; i < 11; ++i ) 
-	{
-		tiles[i].resize( 8 );
-		for( int j = 0 ; j < 8; ++j )
-		{
-			tiles[i][j].setPosition( sf::Vector2f( i * 200, j * 100 ) );
-			tiles[i][j].setSize( sf::Vector2f( 200, 100 ) );
-			tiles[i][j].setColor( sf::Color( r.nextNumber( 255 ), r.nextNumber( 255 ), r.nextNumber( 255 ) )) ;
-			items.push_back( tiles[i][j].getImage() );			
-		}
-	}
-
-	for( std::vector<sf::Drawable*>::iterator it = items.begin();
-        it != items.end();
-        ++it ) 
-	{
-		window.draw( *it );
-	}
+	sf::RenderWindow window( sf::VideoMode( 1024, 768 ), "SFML Tests", sf::Style::Titlebar );
+	window.clear( sf::Color( 0, 55, 0, 0 ) );
+	set.generateDoubleSixSet();
 	
+	// player0
+	player0.setName( "Player One" );
+	player0.drawDominoes( set );
+
+	// player1
+	player1.drawDominoes( set );
+	player1.setName( "Player Two" );
+
+	// player2
+	player2.drawDominoes( set );
+	player2.setName( "Player Three" );
+
+	// player3
+	player3.drawDominoes( set );
+	player3.setName( "Player Four" );
+
+
+	PlayerRenderer g_player0( &player0, 0, &window );
+	g_player0.update();
+	g_player0.draw( );
+	
+	PlayerRenderer g_player1( &player1, 1, &window );
+	g_player1.update();
+	g_player1.draw();
+
+	PlayerRenderer g_player2( &player2, 2, &window );
+	g_player2.update();
+	g_player2.draw();
+
+	PlayerRenderer g_player3( &player3, 3, &window );
+	g_player3.update();
+	g_player3.draw();
+
 	window.display();
-	sf:sleep( sf::Time( sf::seconds( 3 ) ) );
+	sf:sleep( sf::Time( sf::seconds( 5 ) ) );
 	
 }
 

@@ -293,6 +293,7 @@ xcopy /E /Y /I "$(SolutionDir)..\..\..\..\res" "$(OutDir)res"</Command>
     <ClInclude Include="..\..\..\..\src\Texas42SetTests.h" />
     <ClInclude Include="..\..\..\..\src\Trick.h" />
     <ClInclude Include="..\..\..\..\src\TrickTests.h" />
+    <ClInclude Include="..\..\..\..\src\utils.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\src\SFML-2.0\include\SFML\Graphics\Rect.inl" />

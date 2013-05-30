@@ -1,5 +1,6 @@
 #include "DominoSprite.h"
-
+#include "utils.h"
+#include <string>
 
 DominoSprite::DominoSprite(void)
 {
@@ -19,26 +20,25 @@ bool DominoSprite::isLoaded( void )
 
 
 	
-bool DominoSprite::loadTexture( std::string filepath )
+void DominoSprite::loadTexture( std::string filepath )
 {
 	loaded = texture.loadFromFile( filepath );
 	if( loaded )
-		sprite.setTexture( texture );
-	return loaded;
+		setTexture( texture );
 	
 }
 
-bool DominoSprite::setSize( sf::Uint32 x, sf::Uint32 y )
+void DominoSprite::setSize( sf::Uint32 x, sf::Uint32 y )
 {
-	return setSize( sf::Vector2u( x, y ) );
+	setSize( sf::Vector2u( x, y ) );
 }
 
-bool DominoSprite::setOrientationHorizontal( bool horizontal )
+void DominoSprite::setOrientationHorizontal( bool horizontal )
 {
 	sf::Uint32 angle = 0;
 	if( !loaded )
 	{
-		return false;
+		throw "DominoSprite has not been loaded";
 	}
 
 	if( horizontal )
@@ -46,44 +46,29 @@ bool DominoSprite::setOrientationHorizontal( bool horizontal )
 		angle = 90;
 	}
 
-	sprite.setRotation( angle );
-	return true;
+	setRotation( angle );
 }
 
-bool DominoSprite::setSize( sf::Vector2u size )
+void DominoSprite::setSize( sf::Vector2u size )
 {
+	float x, y;
 	if( !loaded )
 	{
-		return false;
+		throw "DominoSprite has not been loaded";
 	}
-	float x, y;
+
 	x = (float) size.x / (float) texture.getSize().x;
 	y = (float) size.y / (float) texture.getSize().y;
-	sprite.setScale( x, y );
-	return true;
+	setScale( sf::Vector2f( x, y ) );
 
 }
 
-
-bool DominoSprite::setPosition( float x, float y )
+// Loads the domino for this sprite
+void DominoSprite::setDomino( Domino domino )
 {
-	return setPosition( sf::Vector2f( x, y ) );
-}
+	std::string filename = "res/img/domino_" + toString(domino.getLowPip());
+	filename += "-" + toString(domino.getHighPip()) + ".png";
 
-bool DominoSprite::setPosition( sf::Vector2f position )
-{
-	if( !loaded )
-	{
-		return false;
-	}
-	sprite.setPosition( position );	
-	return true;
-
-}
-
-
-sf::Sprite* DominoSprite::getSprite( void )
-{
-	return &sprite;
+	loadTexture( filename );
 }
 

@@ -8,20 +8,32 @@
 #include "Renderer.h"
 #include "TextRenderer.h"
 #include "Player.h"
-class PlayerRenderer : public Renderer
+#include "DominoSprite.h"
+
+class PlayerRenderer 
 {
 
 private:
 	TextRenderer name;
 	Player *player;	
+	sf::RenderWindow *window;
+	DominoSprite hand[7];
+	int seat;
+
+
 public:
 	PlayerRenderer( void );
-	PlayerRenderer( Player *player ) : player( player ) { PlayerRenderer(); }
+	PlayerRenderer( Player *player, int seat ) : player( player ), seat( seat ) 
+		{ PlayerRenderer(); }
+	PlayerRenderer( Player *player, int seat, sf::RenderWindow *window ) 
+		: player( player ), seat( seat ), window( window ) 
+		{ PlayerRenderer(); }
 
 	~PlayerRenderer( void );
 
+	void setRenderTarget( sf::RenderWindow *window );
 	void setPlayer( Player *player );
-	void draw( sf::RenderWindow * window );
+	void draw();
 	void update();
 
 };

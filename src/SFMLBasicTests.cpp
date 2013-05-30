@@ -251,7 +251,7 @@ void SFMLBasicTests::SFMLTestRun( void )
 	domino.setPosition( 200, 400 );
 	text.setText( "Test string." );
 	//g.draw();
-	g.draw( domino.getSprite() );
+	g.draw( &domino );
 	g.draw( text.getText() );
 	g.display();
 	
